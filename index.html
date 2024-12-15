@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Updated Page</title>
+    <style>
+        /* Import Pixelify Sans font */
+        @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap');
+       
+        /* General body styling */
+        body {
+            margin: 0;
+            font-family: 'Pixelify Sans', sans-serif;
+            background-image: url('https://firebasestorage.googleapis.com/v0/b/codedex-io.appspot.com/o/buildAssets%2FAjmEhyWpFPQIqrod9lfE%2Fbackground.jpg?alt=media&token=82f4ec15-94a3-4021-8105-532983090523'); 
+            background-repeat: repeat;
+            background-size: auto;
+            background-color: #e10086; 
+            padding-top: 50px; 
+            color: #00db96; 
+        }
+
+        /* Rectangle 1 styling */
+        .rectangle1 {
+            position: absolute;
+            width: 940px; 
+            height: 64px;
+            left: 150px;
+            top: 20px;
+            background: #00db96; /* Updated color */
+            z-index: 1;
+        }
+
+        /* Navigation bar container */
+        .navbar {
+            position: absolute;
+            width: 929px;
+            height: 43px;
+            left: 155px;
+            top: 32px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 36px;
+            line-height: 43px;
+            color: #49297e;
+            z-index: 2;
+        }
+
+        /* Navigation links styling */
+        .navbar a {
+            text-decoration: none;
+            color: #49297e;
+            transition: color 0.3s ease;
+        }
+
+        .navbar a:hover {
+            color: #00db96;
+        }
+
+        /* Image 5 styling */
+        .image5 {
+            position: absolute;
+            width: 90px;
+            height: 90px;
+            left: 19px; 
+            top: 13px;
+            background: url('https://firebasestorage.googleapis.com/v0/b/codedex-io.appspot.com/o/buildAssets%2FAjmEhyWpFPQIqrod9lfE%2Fcrunchyroll.png?alt=media&token=1e7e9371-0c43-4ea9-af8b-6eeee923a052');
+            background-size: cover;
+            background-position: center;
+            z-index: 3;
+        }
+
+        /* Styling for the "Addicting" text */
+        h1 {
+            position: absolute;
+            width: 227px;
+            height: 43px;
+            left: 12px;
+            top: 110px;
+            font-family: 'Pixelify Sans', sans-serif;
+            font-weight: 400;
+            font-size: 36px;
+            line-height: 43px;
+            text-align: center;
+            color: #49297e;
+        }
+
+        /* Perfect Blue text */
+        .Perfect-Blue-text {
+            position: absolute;
+            width: 200px;
+            height: 38px;
+            left: 29px;
+            top: 409px;
+            font-size: 32px;
+            line-height: 38px;
+            text-align: center;
+            color: #49297e;
+        }
+
+        /* Rectangle 2 styling */
+        .rectangle2 {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            left: 22px;
+            top: 196px;
+            background: #00db96; /* Updated color */
+            border: 1px solid #00db96; /* Border color updated */
+        }
+
+        /* Image 6 styling */
+        .image6 {
+            position: absolute;
+            width: 178px;
+            height: 178px;
+            left: 35px;
+            top: 206px;
+            background: url('https://firebasestorage.googleapis.com/v0/b/codedex-io.appspot.com/o/buildAssets%2FAjmEhyWpFPQIqrod9lfE%2Fperfect_blue.jpg?alt=media&token=f7b12254-607e-4425-8506-f977b8267f39'); 
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* Gokinjo Monogatari Text */
+        .gokinjo-monogatari-text {
+            position: absolute;
+            width: 340px;
+            height: 38px;
+            left: 238px;
+            top: 409px;
+            font-size: 32px;
+            line-height: 38px;
+            text-align: center;
+            color: #49297e;
+        }
+
+        /* Rectangle 3 styling */
+        .rectangle3 {
+            box-sizing: border-box;
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            left: 315px;
+            top: 196px;
+            background: #00db96; /* Updated color */
+            border: 1px solid #00db96; /* Border color updated */
+        }
+
+        /* Image 7 styling */
+        .image7 {
+            position: absolute;
+            width: 179px;
+            height: 181px;
+            left: 325px;
+            top: 207px;
+            background: url('https://firebasestorage.googleapis.com/v0/b/codedex-io.appspot.com/o/buildAssets%2FAjmEhyWpFPQIqrod9lfE%2Fgokinjo_monogatari.jpg?alt=media&token=202079a9-759c-4ef5-ba34-e7fca3907729');
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* Kodocha Text */
+        .Kodocha-text {
+            position: absolute;
+            width: 134px;
+            height: 38px;
+            left: 633px;
+            top: 410px;
+            font-family: 'Pixelify Sans', sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 38px;
+            text-align: center;
+            color: #49297e;
+        }
+
+        /* Rectangle 7 styling */
+        .rectangle7 {
+            box-sizing: border-box;
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            left: 605px;
+            top: 196px;
+            background: #00db96; /* Updated color */
+            border: 1px solid #00db96; /* Border color updated */
+        }
+
+        /* Image 8 styling */
+        .image8 {
+            box-sizing: border-box;
+            position: absolute;
+            width: 177px;
+            height: 176px;
+            left: 617px;
+            top: 208px;
+            background: url('https://firebasestorage.googleapis.com/v0/b/codedex-io.appspot.com/o/buildAssets%2FAjmEhyWpFPQIqrod9lfE%2Fkodomo_no_omocha.jpg?alt=media&token=d0f52c4b-f36e-456e-b24e-68e61e25ce19');
+            border: 1px solid #00db96; /* Border color updated */
+        }
+
+        /* His and Her Circumstances Text */
+        .his-and-her-circumstances-text {
+            position: absolute;
+            width: 184px;
+            height: 76px;
+            left: 870px;
+            top: 410px;
+            font-family: 'Pixelify Sans', sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 38px;
+            text-align: center;
+            color: #49297e; /* Black color */
+        }
+
+        /* Rectangle 16 styling */
+        .rectangle16 {
+            box-sizing: border-box;
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            left: 890px;
+            top: 196px;
+            background: #00db96; /* Updated color */
+            border: 1px solid #00db96; /* Border color updated */
+        }
+
+        /* Image styling */
+        .image {
+            box-sizing: border-box;
+            position: absolute;
+            width: 187px;
+            height: 185px;
+            left: 895px;
+            top: 205px;
+            background: url('https://firebasestorage.googleapis.com/v0/b/codedex-io.appspot.com/o/buildAssets%2FAjmEhyWpFPQIqrod9lfE%2Fhis_and_her_circumstances.jpg?alt=media&token=f9911135-7d16-49fe-a01d-c4263c6b6cf1');
+            border: 1px solid #00db96; /* Border color updated */
+        }
+
+        /* Privacy policy, about us, email section */
+        .footer {
+            position: absolute;
+            width: 529px;
+            height: 43px;
+            left: 292px;
+            top: 510px;
+            font-family: 'Pixelify Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 36px;
+            line-height: 43px;
+            text-align: center;
+            color: #49297e;
+            z-index: 4; /* Make sure footer appears above the rectangle */
+        }
+
+        /* Rectangle 15 styling */
+        .rectangle15 {
+            position: absolute;
+            width: 700px;
+            height: 64px;
+            left: 206px;
+            top: 540px;
+            background: #00db96; /* Updated color */
+        }
+    </style>
+</head>
+<body>
+    <!-- Rectangle 1 -->
+    <div class="rectangle1"></div>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="#">home</a>
+        <a href="#">tv shows</a>
+        <a href="#">movies</a>
+        <a href="#">manga</a>
+        <a href="#">store</a>
+        <a href="#">news</a>
+        <a href="#">other</a>
+    </div>
+
+    <!-- Image 5 -->
+    <div class="image5"></div>
+
+    <!-- "Addicting" text -->
+    <h1>Addicting</h1>
+
+    <!-- Rectangle 2 -->
+    <div class="rectangle2"></div>
+
+    <!-- Image 6 -->
+    <div class="image6"></div>
+
+    <!-- Perfect Blue text -->
+    <div class="Perfect-Blue-text">Perfect Blue</div>
+
+    <!-- Rectangle 3 -->
+    <div class="rectangle3"></div>
+
+    <!-- Image 7 -->
+    <div class="image7"></div>
+
+    <!-- Gokinjo Monogatari Text -->
+    <div class="gokinjo-monogatari-text">Gokinjo Monogatari</div>
+
+    <!-- Rectangle 7 -->
+    <div class="rectangle7"></div>
+
+    <!-- Image 8 -->
+    <div class="image8"></div>
+
+    <!-- Kodocha Text -->
+    <div class="Kodocha-text">Kodocha</div>
+
+    <!-- Rectangle 16 -->
+    <div class="rectangle16"></div>
+
+    <!-- Image -->
+    <div class="image"></div>
+
+    <!-- His and Her Circumstances Text -->
+    <div class="his-and-her-circumstances-text">His and Her Circumstances</div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>privacy policy | about us | email</p>
+    </div>
+
+    <!-- Rectangle 15 -->
+    <div class="rectangle15"></div>
+</body>
+</html>
